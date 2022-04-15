@@ -1,0 +1,425 @@
+/* RESET CSS START */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* RESET CSS END */
+.container {
+    width: 70%;
+    margin: 10px;
+    height: auto;
+    position: relative;
+    padding-top: 15px;
+    background-color: #F9F9F9;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.30), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    height: 70px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.30), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.header>.profile,
+.header>.search {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.header>.search>div {
+    margin: 0 5px;
+}
+
+.header>.search>div>input {
+    border: none;
+    outline: none;
+    font-size: 13px;
+}
+
+.header>.profile>div {
+    width: auto;
+    height: auto;
+}
+
+.header>.profile>div>button {
+    width: auto;
+    cursor: pointer;
+    height: auto;
+    border-radius: 20px;
+    padding: 2px 15px;
+    border: 1px solid blue;
+    background-color: white;
+}
+
+.header>.profile>div>button:hover {
+    background-color: blue;
+    transition: .3s ease-in-out;
+}
+
+.header>.profile>div>button:hover small {
+    color: white;
+    transition: .3s ease-in-out;
+    font-weight: bold;
+}
+
+.header>.profile>div>button>small {
+    font-size: 18px;
+    color: blue;
+    font-weight: 500;
+}
+
+.user_info {
+    display: none;
+    padding: 3px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.gender_male {
+    background-color: rgb(16, 194, 16) !important;
+    color: white !important;
+}
+
+.gender_female {
+    background-color: rgb(245, 21, 125) !important;
+    color: white !important;
+}
+
+.gender_other {
+    background: linear-gradient(90deg,
+            rgba(255, 0, 0, 1) 0%,
+            rgba(255, 154, 0, 1) 10%,
+            rgba(208, 222, 33, 1) 20%,
+            rgba(79, 220, 74, 1) 30%,
+            rgba(63, 218, 216, 1) 40%,
+            rgba(95, 21, 242, 1) 70%,
+            rgba(186, 12, 248, 1) 80%,
+            rgba(251, 7, 217, 1) 90%,
+            rgba(255, 0, 0, 1) 100%);
+    color: white;
+    padding: 3px 25px !important;
+}
+
+.visible {
+    display: inline-block !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.user_info>span {
+    font-size: 16px;
+}
+
+.main {
+    height: 500px;
+    overflow-y: auto;
+}
+
+.main_menu {
+    display: flex;
+    justify-content: start;
+    position: relative;
+    overflow: hidden;
+}
+
+.main_menu>div:nth-child(2) {
+    position: absolute;
+    right: 0;
+    padding: 15px 25px;
+}
+
+.main_menu_text {
+    display: flex;
+    justify-content: start;
+}
+
+.main_menu_text>div {
+    padding: 5px 25px;
+    cursor: pointer;
+    margin: 10px 5px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.main_menu>div>button {
+    background-color: white;
+    color: blue;
+    border-radius: 30px;
+    border: 1px solid blue;
+    padding: 3px 10px;
+}
+
+.main_menu_text>div:hover,
+.main_menu>div>button:hover {
+    background-color: blue;
+    color: white;
+    transition: .3s ease-in-out;
+    font-weight: bold;
+}
+
+.add_note_container,
+.main_menu_cards {
+    margin: 10px;
+    display: flex;
+    position: relative;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main_menu_card {
+    width: 220px;
+    position: relative;
+    height: 200px;
+    margin: 2px 10px;
+    border-radius: 10px;
+    transition: .5s all;
+    background-color: rgb(235, 179, 111);
+    box-shadow: 0 5px 5px rgba(161, 159, 159, 0.3), 0 5px 5px rgba(146, 144, 144, 0.22);
+}
+
+.main_detail {
+    width: 550px !important;
+    height: 400px !important;
+    transition: .5s all;
+    z-index: 1000;
+    position: fixed;
+    margin: 0 auto;
+}
+
+.search_btn {
+    width: 150px;
+    border-radius: 20px;
+    padding: 5px 0px;
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.main_detail_note {
+    display: inline-block !important;
+    width: 500px !important;
+}
+
+.noteDetail {
+    position: absolute;
+    top: 45px;
+    border-radius: 50%;
+    right: 8px;
+    border: none;
+}
+
+.noteDetail>img {
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.main_menu_card>div {
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 13px;
+    color: white
+}
+
+.main_menu_note>svg {
+    color: black;
+}
+
+.main_menu_note {
+    font-size: 13px !important;
+    color: white !important;
+    position: relative;
+    display: inline-block;
+    width: 180px;
+    height: 120px;
+    text-align: start;
+    text-overflow: clip;
+    white-space: pre-wrap;
+    overflow: hidden;
+}
+
+.note_project_type {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.note_project_type>img {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 4px;
+    margin-right: 5px;
+}
+
+.main_note_remove>button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: red;
+    top: 5px;
+    font-weight: bold;
+    right: 5px;
+    color: white;
+    z-index: 20;
+    font-size: 20px;
+    border: none;
+    padding: 0 7px;
+}
+
+.foother {
+    border-top: 1px solid;
+    display: flex;
+    justify-content: center;
+    padding: 4px 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.new_note_container {
+    z-index: 100;
+    width: 100%;
+    height: 400px;
+    top: -10px;
+    right: 105%;
+    overflow-y: auto;
+    padding: 20px 30px;
+    position: absolute;
+    transition: .3s all;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(161, 159, 159, 0.3), 0 5px 5px rgba(146, 144, 144, 0.22);
+    margin: 5px 10px;
+}
+
+.add_note_container {
+    position: relative;
+}
+
+.note_empty {
+    position: absolute;
+    top: 150px;
+    width: 300px;
+    border: 1px solid blue;
+    padding: 5px;
+    left: 350px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 40px;
+}
+
+.note_activ {
+    display: none !important;
+}
+
+.new_note_container::-webkit-scrollbar {
+    width: 0.2em;
+}
+
+.new_note_container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.new_note_container::-webkit-scrollbar-thumb {
+    background-color: blue;
+    outline: 1px solid blue;
+}
+
+.new_note_container>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.new_note_container>div>div {
+    display: flex;
+    margin: 10px 3px;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+}
+
+textarea {
+    padding: 10px;
+}
+
+.new_note_colors {
+    display: flex;
+    justify-content: center;
+    flex-direction: row !important;
+}
+
+.new_note_colors>div {
+    display: flex;
+    padding: 10px 15px;
+    flex-direction: column;
+}
+
+.new_note_colors>div>span {
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.alarmClock_container {
+    overflow: hidden;
+    position: relative;
+}
+
+.alarmClock {
+    top: 25px;
+    position: absolute;
+    right: -100%;
+    transition: .5s all;
+    z-index: 10;
+}
+
+.activAlarm {
+    right: 8px !important;
+    transition: .5s all;
+}
+
+.new_note_colors>div>input {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.note_close,
+.note_add {
+    margin: 5px;
+    color: white;
+    border: none;
+    width: 150px;
+    border-radius: 20px;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.note_close {
+    background-color: red;
+}
+
+.note_add {
+    background-color: rgb(12, 211, 12);
+}
+
+.activ {
+    right: 0 !important;
+    transition: .3s all;
+}
