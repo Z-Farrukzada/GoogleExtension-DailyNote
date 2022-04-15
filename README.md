@@ -8,10 +8,10 @@ This Google Extension will help you take daily notes, you can set a time to be n
 
 <img src="https://github.com/Z-Farrukzada/GoogleExtension-DailyNote/blob/main/DailyNoteExtension/project_screen/home.png" />
 
-<i> Add Profile </i>-<small>Add user info </small>
-<i> Search </i>-<small>Search all notes</small> 
-<i> Menus </i>-<small> All , Business , Personal your project notes </small>
-<i> Add New Note </i>-<small>Adding new note</small>
+<i> Add Profile </i>-<small>Add user info </small> <br>
+<i> Search </i>-<small>Search all notes</small> <br>
+<i> Menus </i>-<small> All , Business , Personal your project notes </small> <br>
+<i> Add New Note </i>-<small>Adding new note</small> <br>
 
 <h2>Project Add Page</h2>
 
