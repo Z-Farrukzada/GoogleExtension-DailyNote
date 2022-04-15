@@ -17,7 +17,7 @@ This Google Extension will help you take daily notes, you can set a time to be n
 
 <img src="https://github.com/Z-Farrukzada/GoogleExtension-DailyNote/blob/main/DailyNoteExtension/project_screen/add.png" />
 
-<i> Time </>-<small>Add Note Time</small> <br>
+<i> Time </i>-<small>Add Note Time</small> <br>
 <i> Note </i>-<small>Note Text</small><br>
 <i>Note Bacground Color</i>-<small>You Note Add Bacground Color</small><br>
 <i>Note Text Color</i>-<small>You Note Add Text Color</small><br>
